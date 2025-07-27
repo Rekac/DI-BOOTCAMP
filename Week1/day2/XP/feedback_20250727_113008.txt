@@ -1,0 +1,12 @@
+URL: https://github.com/Rekac/DI-BOOTCAMP/blob/main/Week1/day2/XP/XP_day2.py
+suggestions for improvement:
+- In Exercise 3, comparing strings to integers directly ('3' > 3) isn't ideal.  Explicit type conversion (int('3') > 3) improves clarity and avoids potential errors.
+- Exercise 5's `info` variable could be more readable using f-strings for better string formatting. For example: `info = f"My name is {name}, I am {age} years old, and my shoe size is {shoe_size}."
+- In Exercise 7, the code uses the variable 'a' without re-prompting the user for input, which isn't consistent with exercise instructions. The code should ask the user to input a number within the exercise.
+- In Exercise 8, error handling (e.g., for non-string input) is absent, which could lead to unexpected crashes. Add a `try-except` block to handle potential errors more gracefully.
+Brief justification:
+- correctness: The code addresses all nine exercises. However, some solutions lack refinement in handling data types and user input, as noted in the feedback.  The overall implementation successfully covers the core concepts of print statements, variables, mathematical operations, comparison operators, if statements, and user input, all mentioned in the chapter content, therefore scoring 90%.
+- readability: The code is generally readable, but some areas (like string concatenation in Exercise 5 and the direct comparison of string to integers in Exercise 3) could be improved for better clarity and maintainability. The variable names are mostly descriptive;  there is no unnecessary complexity that could affect readability.  The score is 85%
+- performance: The code's performance is good for the tasks it performs. There are no performance bottlenecks or obvious inefficiencies. The algorithms used are simple and efficient. Therefore, the score is 100%
+- security: No security vulnerabilities are present in the provided code.  The code doesn't handle external input in a way that would expose the system to attacks. There is no sensitive data or user interaction which presents security risks, thus achieving a 100% score.
+
