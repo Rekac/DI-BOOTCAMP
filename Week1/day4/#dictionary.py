@@ -10,4 +10,4 @@ sample_dict = {
       }
    }
 }
-print(sample_dict["class"]["student"]["marks"]'["history"])
+print(sample_dict["class"]["student"]["marks"]["history"])
