@@ -30,27 +30,5 @@
 
 
 
----SELECT ALL items
 
--- SELECT * FROM items
-
-
---SELECT ALL ITEMS ABOVE PRICE 80
-
--- SELECT * FROM items WHERE price_item>80
-
---SELECT ALL ITEMS BELOW PRICE 300
-
--- SELECT * FROM items WHERE price_item<=300
-
----All customers whose last name is ‘Smith’ 
-
--- SELECT * FROM costumers WHERE last_name='Smith'
-
---All customers whose last name is ‘Jones’
-
--- SELECT * FROM costumers WHERE last_name='Jones'
-
----All customers whose firstname is not ‘Scott’
-
-SELECT * FROM costumers WHERE first_name<>'Scott'
+SELECT * FROM costumers
