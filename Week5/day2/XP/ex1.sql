@@ -1,15 +1,17 @@
+
+---CREATE DATABASE public under server Bootcamp
 --- CREATE TABLE items
 
 CREATE TABLE items(
-item_id SERIAL,
+item_id SERIAL PRIMARY KEY,
 item VARCHAR(100) NOT NULL,
-price_item  NUMERIC(50,0) NOT NULL);
+price_item  NUMERIC(10,2) NOT NULL);
 
 
 --- CREATE TABLE customers
 
 CREATE TABLE customers(
-customer_id SERIAL,
+customer_id SERIAL PRIMARY KEY,
 first_name VARCHAR(30) NOT NULL,
 last_name VARCHAR(100) NOT NULL);
 
@@ -22,7 +24,7 @@ VALUES('Small Desk',100),
 
 --INSERT VALUES ON TABLE COSTUMERS
 
-INSERT INTO costumers(first_name,last_name)
+INSERT INTO customers(first_name,last_name)
 VALUES('Greg','Jones'),
 ('Sandra','Jones'),
 ('Scott','Scott'),
@@ -46,12 +48,12 @@ SELECT * FROM items WHERE price_item<=300;
 
 ---All customers whose last name is ‘Smith’ 
 
-SELECT * FROM costumers WHERE last_name='Smith';
+SELECT * FROM customers WHERE last_name='Smith';
 
 --All customers whose last name is ‘Jones’
 
-SELECT * FROM costumers WHERE last_name='Jones';
+SELECT * FROM customers WHERE last_name='Jones';
 
 ---All customers whose firstname is not ‘Scott’
 
-SELECT * FROM costumers WHERE first_name<>'Scott';
+SELECT * FROM customers WHERE first_name<>'Scott';

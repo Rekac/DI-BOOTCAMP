@@ -43,16 +43,27 @@ print(new_list)
 even_list=[x for x in newlist if x %2==1]
 even_list.append(x)
 print(even_list)
-        
-#ex7
-Fruits[]
+
+ #ex7
+fruit = input("Enter items separated by commas: ")
+item_list = fruit.split(',')
+for item in item_list:
+    print(item.strip()) 
+
+#user input
+user_input= input("Enter a fruit name: ")
+if user_input in item_list:
+    print("You chose one of your favorite fruits! Enjoy!")
+else:
+    print("You chose a new fruit. I hope you enjoy it!")
+
+#ex8  Pizza Topppings
+
 while True:
-    stored_fruits= input("Enter youe favorite fruit: ")
-    if not stored_fruits:
+    user_input = input("Enter a Pizza Topping: ")
+    if user_input=="quit":
         break
-
-Fruits.append(stored_fruits)
-
-print(Fruits)
-
-          
+    else:
+        print(user_input)
+        price=10+len(user_input)*2.5
+        print(f'The price of pizza is{price}')
