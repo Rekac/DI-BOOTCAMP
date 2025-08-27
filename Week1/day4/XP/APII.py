@@ -1,2 +1,7 @@
 import requests
-get("https://v3.football.api-sports.io/status");
+import json
+
+base = "https://example.com/api"  # Replace with the actual API endpoint
+
+resp = requests.get(base , headers=headers)
+print(resp.json())
