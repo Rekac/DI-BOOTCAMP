@@ -58,12 +58,59 @@ else:
     print("You chose a new fruit. I hope you enjoy it!")
 
 #ex8  Pizza Topppings
-
+toppings = []
 while True:
-    user_input = input("Enter a Pizza Topping: ")
-    if user_input=="quit":
+    user_input = input("Please enter a topping (or 'quit' to finish): ")
+    if user_input() == 'quit':
         break
-    else:
-        print(user_input)
-        price=10+len(user_input)*2.5
-        print(f'The price of pizza is{price}')
+    toppings.append(user_input)
+    print(f"Added {user_input} to your pizza.")
+
+print("Your toppings:", toppings)
+price = 10 + len(toppings) * 2.5
+print(f"The price of the pizza is ${price}")
+
+#ex9 Cinema Tickets
+users=[]
+cost=[]
+new_users=[]
+new_cost=[]
+while True:
+    user_input = input("Please enter your namere (or ' ' to finish): ")
+    age_input = input("Please enter an age (or ' ' to finish): ")
+    if user_input == '':
+        break
+    age = int(age_input)
+    if age < 3:
+        price = 0
+        users.append(user_input)
+    elif age in range(3,12):
+        price=10 
+        cost.append(price)
+        users.append(user_input)
+        total_cost=int(sum(cost))     
+    elif age>13:
+        price=15  
+        cost.append(price)
+        users.append(user_input)
+        total_cost=int(sum(cost)) 
+    print(users)
+    print("your total ticket cost is", total_cost)
+    if age in range(16,21): #create new list for users and total cost with age restrictions
+        price=15
+        new_users.append(user_input)
+        new_cost.append(price)
+        total_cost1=int(sum(new_cost))
+    print(new_users)
+    print("your total ticket cost is", total_cost1) 
+#ex10 Sandwich orders
+sandwich_orders = ["Tuna", "Pastrami", "Avocado", "Pastrami", "Egg", "Chicken", "Pastrami"]
+finished_sandwich=[]
+
+while "Pastrami" in sandwich_orders:
+    sandwich_orders.remove("Pastrami")
+finished_sandwich = sandwich_orders
+for item in finished_sandwich:
+    print(f'I made your {item} sandwich')
+print(finished_sandwich)    
+ 
