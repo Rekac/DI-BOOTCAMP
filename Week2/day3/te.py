@@ -10,5 +10,5 @@ def make_great(magicians_names):
  for name in magicians_names:
     print(f'the Great {name}')
 
-make_great()
-show_magicioans()
+make_great(magicians_names)
+show_magicioans=make_great(magicians_names)
