@@ -55,12 +55,13 @@ show_magicioans=make_great(magicians_names)
 #Generate a random temperature and provide advice based on the temperature range
 import random
 def get_random_temp():
- temp = random.randint(-10,40)
+# month=int(input("please enter the numerical month: "))
+ temp = random.uniform(-10,40)
 get_random_temp() 
 
 def main():
  num = get_random_temp()
- print(f"The temperanture now is {num} Degree Celsius.")
+ print(f"The temperanture right now is {num} Degree Celsius.")
  if num<0:
     print("Brrr, that's freezing! Wear some extra layers today.")
  elif 0< num <16:
@@ -71,6 +72,7 @@ def main():
     print("A bit warm, stay hydrated.")   
  elif 32<= num <=40:
     print("It's really hot! Stay cool.")
+    
 
 
 
