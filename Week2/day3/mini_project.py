@@ -1,8 +1,9 @@
-def new_func(Fruits):
-
-while True:
-    Fruits = input("Enter your favorite fruits: ")
-    if not Fruits:
-        print("is empty")
-        break
-    new_func(Fruits)
+#Representing the Game Board
+#creating the board
+def display_board():
+ board = [
+    [' ', ' ', ' '],
+    [' ', ' ', ' '],
+    [' ', ' ', ' ']
+ ]
+ display_board()
