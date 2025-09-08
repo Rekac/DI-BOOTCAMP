@@ -9,18 +9,20 @@ favorite_book('The Notebook')
 
 #ex3-Create a function that describes a city and its country
 def describe_city(city="Unknown",country="Unknown"):
-    print(city +"is in"+ country)
+    print(city +" is in "+ country)
 describe_city("Reykjavik", "Iceland")
 describe_city("Paris")
 
 #ex4 Create a function that generates random numbers and compares them
 # import library random
 import random
-def random_number(num1,num2)->int: 
-    num1 = random.randint(1,100)
+def random_number(self,num1,num2)->int: 
+    self.num1=num1
+    self.num2=num2
+    num1=random.randint(1,100)
     num2 = int(input("Please enter a number: "))
-    if num1==int(num2):
-        print(f"Success!")
+    if num1==num2:
+        print("Success!")
     else:
         print(f"Fail!Your number: {num2} random number: {num1}") 
 random_number()
@@ -49,7 +51,6 @@ def make_great(magicians_names):
     print(f'the Great {name}')
 
 make_great(magicians_names)
-show_magicioans=make_great(magicians_names)
 
 #ex7 Temperature advice
 #Generate a random temperature and provide advice based on the temperature range
